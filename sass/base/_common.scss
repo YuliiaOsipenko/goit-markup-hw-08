@@ -1,0 +1,42 @@
+body {
+    color: #2a2a2a;
+    background-color: #fff;
+    font-family: Roboto; 
+    letter-spacing: 0.03em;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.container {
+    
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    
+}
+.ul, .ol, .h1, .h2, .h3, .h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+.about__list, 
+.portfolio__list,
+.footer__footer-social-list,
+.clients__list, 
+.social-list, 
+.team__list, 
+.footer, 
+.footer-social, 
+.footer__list, 
+.header__site-nav-list, 
+.header__auth-nav-list, 
+.projects__menu-list, 
+.projects__list{
+    list-style: none;
+  
+}

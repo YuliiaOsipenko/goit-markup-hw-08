@@ -1,0 +1,57 @@
+.about__list, .portfolio, .header {
+    background-color: var(--primary-bgc);
+    margin: 0;
+    padding-left: 0px;
+    
+}
+.section-about{
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.about__list {
+    display: flex;
+    
+        
+}
+.about__image{
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+
+    
+} 
+.about__item {
+    margin-right: 30px;
+    width: 270px;
+    &:nth-child(4n){
+        margin-right: 0px;
+    }
+}
+
+.about__icon{
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+}
+.about__title{
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    
+    
+}
+.about__text {
+    color: var(--primary-text-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
