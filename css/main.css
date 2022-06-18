@@ -1508,7 +1508,7 @@ body.modal-open {
     margin-bottom: 60px;
   }
   .footer__form-input {
-    max-width: 450px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
