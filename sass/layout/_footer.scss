@@ -1,10 +1,4 @@
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-    
-    
-}
 .footer {
     background-color: var(--hero-bgc);
     padding-top: 60px;
@@ -12,9 +6,7 @@
     
        
 }
-.footer__footer-adress{
-    margin-right: 70px;
-}
+
 .footer__list{
     padding-left: 0px;
     margin-bottom: 0px;
@@ -64,16 +56,9 @@
     
     
 }
-.footer__item{
-    margin-top: 9px;
-    &:first-child{
-        margin-top: 0px;
-    }
-}
 
-.footer__footer-social-div{
-    margin-right: 93px;
-}
+
+
 .footer__title {
 font-style: normal;
 font-weight: 700;
@@ -99,13 +84,7 @@ margin-bottom: 20px;
     }
     
 }
-.footer__footer-social-list {
-    display: flex;
-    padding-left: 0px;
-    margin: 0px;
-      
 
-}
 
 .footer__footer-social-item{
     background-color: rgba(255, 255, 255, 0.1);
@@ -120,20 +99,9 @@ margin-bottom: 20px;
 
 
 
-.footer__email-form{
-    margin:0;
-    width:358px;
-    height:50px;
-    background: var(--hero-bgc);
-    display: flex;
-    align-items: center;
 
-}
-.footer__form-field{
-    margin-right: 12px;
-}
 .footer__form-input {
-    width:358px;
+    
     height:50px;
     background-color: transparent;
     color: rgba(255, 255, 255, 0.6);
@@ -172,3 +140,166 @@ margin-bottom: 20px;
     fill:var(--special-title-color);
     margin-left: 12px;
 }
+
+
+ @media screen and (max-width: 1199px){
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+      .footer__email-div {
+        
+        text-align: center;
+      }
+    
+      .footer__footer-social-div {
+        text-align: center;
+      }
+      .footer__logo-footer{
+        text-align: center;
+    }
+       .footer__footer-adress{
+        display: block;
+        
+    }
+       .footer__list{
+        text-align: center;
+    
+   }
+        .footer__footer-adress{
+            margin-right: 165px;
+            margin-bottom: 60px;
+   }
+
+   .footer__footer-social-list {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+   
+}
+.footer__form-input {
+    width:450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__telegram-btn{
+    margin-top: 30px;
+   
+    
+}
+.footer__email-form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}
+      
+
+
+@media screen and (max-width: 767px) {
+   
+    .footer__logo-footer{
+        text-align: center;
+    }
+    .footer__footer-adress{
+        display: block;
+        margin-right: 0px;
+        
+    }
+   .footer__list{
+     
+    text-align: center;
+    margin-bottom: 60px;
+   }
+    .footer__title{
+        text-align: center;
+    }
+    .footer__footer-social-div{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__item{
+    margin-top: 8px;
+    &:first-child{
+        margin-top: 0px;
+    }
+}
+.footer__footer-social-list {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 60px;
+}
+
+.footer__form-input {
+    width:450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__telegram-btn{
+    margin-top: 30px;
+   
+    
+}
+.footer__email-form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+} 
+
+ @media screen and (min-width: 1200px) {
+    
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+.footer__footer-adress{
+    margin-right: 93px;
+    margin-bottom: 0px;
+}
+.footer__footer-social-div{
+    margin-right: 93px;
+    margin-bottom: 0px;
+}
+.footer__email-form{
+    margin:0;
+    width:358px;
+    height:50px;
+    background: var(--hero-bgc);
+    display: flex;
+    align-items: center;
+    
+
+}
+.footer__item{
+    margin-top: 9px;
+    &:first-child{
+        margin-top: 0px;
+    }
+}
+.footer__footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin: 0px;
+      
+
+}
+
+.footer__form-field{
+    margin-right: 12px;
+   
+}
+.footer__form-input {
+    width:358px;
+}
+.footer__telegram-btn{
+    margin-top: 0px;
+}
+ }

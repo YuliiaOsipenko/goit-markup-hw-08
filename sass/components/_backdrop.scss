@@ -205,3 +205,14 @@
 .backdrop__policy-checkbox-title {
     color: var(--accent-color);
 }
+
+@media screen and (max-width: 1199px) {
+    .backdrop__modal{
+    width: 450px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 479px)  {
+    .backdrop__modal{
+    width: 90%;
+  }
+}

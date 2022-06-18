@@ -48,3 +48,9 @@
     margin:0;
     color: var(--special-title-color);
         }
+    
+@media screen and (max-width: 1199px) {
+    .portfolio {
+      display: none;
+       }
+  }
