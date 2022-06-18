@@ -299,9 +299,9 @@ body.modal-open {
   }
   .mobile-menu__close-btn {
     position: absolute;
-    background-color: #fff;
-    top: 0px;
-    right: 0px;
+    background-color: transparent;
+    top: 15px;
+    right: 25px;
     z-index: 200;
     border: none;
     padding: 0;
@@ -577,14 +577,20 @@ body.modal-open {
     background-color: #C4C4C4;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/mobhero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobhero.jpg);
     background-size: cover;
     background-position: center;
     margin-left: auto;
     margin-right: auto;
     width: 480px;
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/mobhero.jpg);
   }
   .hero__title {
     color: var(--special-title-color);
@@ -625,8 +631,8 @@ body.modal-open {
     background-color: #C4C4C4;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/tabhero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tabhero.jpg);
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
@@ -634,6 +640,15 @@ body.modal-open {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/tabhero.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero__title {
     color: var(--special-title-color);
     font-style: normal;
@@ -680,6 +695,15 @@ body.modal-open {
     max-width: 1600px;
     background-repeat: no-repeat;
   }
+}
+
+@media screen and (min-width: 1200) and (min-device-pixel-ratio: 2), screen and (min-width: 1200) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200) and (min-resolution: 192dpi), screen and (min-width: 1200) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero.jpg);
+  }
+}
+
+@media screen and (min-width: 1200) {
   .hero__title {
     color: var(--special-title-color);
     font-style: normal;
@@ -714,8 +738,6 @@ body.modal-open {
   }
 }
 
-/*
-*/
 .about__list, .portfolio, .header {
   background-color: var(--primary-bgc);
   margin: 0;
@@ -1487,7 +1509,6 @@ body.modal-open {
   }
   .footer__form-input {
     max-width: 450px;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
