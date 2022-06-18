@@ -19,7 +19,7 @@
 
 
 
-@media screen and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
 
   
    
@@ -229,8 +229,8 @@
     cursor: pointer;
 
   }
-  .header__mobile-menu-btn .header__mobile-menu-icon:hover,
-  .header__mobile-menu-btn .header__mobile-menu-icon:focus{
+  .header__mobile-menu-btn:hover .header__mobile-menu-icon,
+  .header__mobile-menu-btn:focus .header__mobile-menu-icon{
     fill: #2196F3;
   }
   .mobile-menu {
