@@ -29,7 +29,7 @@ body.modal-open {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -583,7 +583,7 @@ body.modal-open {
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    min-width: 480px;
+    width: 480px;
     background-repeat: no-repeat;
   }
   .hero__title {
@@ -764,6 +764,7 @@ body.modal-open {
   .section-about {
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 480px;
   }
   .about__list {
     display: block;
@@ -773,7 +774,7 @@ body.modal-open {
     margin-top: 30px;
   }
   .about__item {
-    width: 450px;
+    max-width: 450px;
   }
   .about__text {
     margin-top: 10px;
@@ -952,13 +953,8 @@ body.modal-open {
     margin: 30px 15px 0px 15px;
     display: block;
   }
-  .team__container {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .team__foto {
-    width: 100%;
+    max-width: 450px;
     margin-top: 30px;
   }
   .team__img {
@@ -1003,11 +999,6 @@ body.modal-open {
   }
   .team__div {
     padding-bottom: 30px;
-  }
-  .team__container {
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .team__img {
     width: 270px;
@@ -1239,6 +1230,9 @@ body.modal-open {
 
 .footer {
   background-color: var(--hero-bgc);
+}
+
+.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1450,6 +1444,14 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .footer__logo-footer {
     text-align: center;
+  }
+  .footer-container {
+    max-width: 480px;
+    background-color: var(--hero-bgc);
+    display: block;
+    margin: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .footer__footer-adress {
     display: block;
