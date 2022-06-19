@@ -20,7 +20,21 @@
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
-
+  .header__container-header {
+ 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 768px;
+   
+    
+    }
   
    
 .header__logo {
@@ -390,7 +404,7 @@
  
   .mobile-menu__list{
     padding-left: 0px;
-    margin-bottom:306px;
+    margin-bottom:500px;
   }
     
 }
@@ -415,7 +429,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  min-width: 480px;
+  width: 1200px;
  
   
   }

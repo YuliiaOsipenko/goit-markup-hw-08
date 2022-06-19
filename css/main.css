@@ -92,6 +92,22 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 768px;
+  }
   .header__logo {
     text-decoration: none;
     padding-top: 24px;
@@ -413,7 +429,7 @@ body.modal-open {
   }
   .mobile-menu__list {
     padding-left: 0px;
-    margin-bottom: 306px;
+    margin-bottom: 500px;
   }
 }
 
@@ -438,7 +454,7 @@ body.modal-open {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    min-width: 480px;
+    width: 1200px;
   }
   .header__logo {
     text-decoration: none;
@@ -590,11 +606,17 @@ body.modal-open {
   }
 }
 
+.hero {
+  background-color: #C4C4C4;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 @media screen and (max-width: 767px) {
   .hero {
     background-color: #C4C4C4;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/mobhero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobhero.jpg);
     background-size: cover;
@@ -647,8 +669,8 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .hero {
     background-color: #C4C4C4;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/tabhero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tabhero.jpg);
     background-size: cover;
@@ -712,6 +734,10 @@ body.modal-open {
     margin-right: auto;
     max-width: 1600px;
     background-repeat: no-repeat;
+    -o-object-position: 50%, 50%;
+       object-position: 50%, 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -804,7 +830,6 @@ body.modal-open {
   .section-about {
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 480px;
   }
   .about__list {
     display: block;
@@ -937,6 +962,7 @@ body.modal-open {
 .team__list {
   padding-left: 0px;
   margin-bottom: 0px;
+  gap: 30px;
 }
 
 .team__foto {
@@ -952,7 +978,7 @@ body.modal-open {
   line-height: 1.16;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .team__div {
@@ -990,12 +1016,15 @@ body.modal-open {
   }
   .team__list {
     padding-left: 0px;
-    margin: 30px 15px 0px 15px;
+    margin-top: 0px;
     display: block;
   }
   .team__foto {
     max-width: 450px;
     margin-top: 30px;
+  }
+  .team__foto:first-child {
+    margin-top: 0px;
   }
   .team__img {
     width: 100%;
@@ -1137,7 +1166,7 @@ body.modal-open {
   line-height: 1.16;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .clients__link {
@@ -1191,6 +1220,7 @@ body.modal-open {
         flex-wrap: wrap;
     padding: 0px;
     gap: 30px;
+    margin: 0px;
   }
   .clients__item {
     width: 210px;
@@ -1215,6 +1245,7 @@ body.modal-open {
         flex-wrap: wrap;
     padding: 0px;
     gap: 30px;
+    margin: 0px;
   }
   .clients__item {
     width: 226px;
@@ -1486,10 +1517,8 @@ body.modal-open {
     text-align: center;
   }
   .footer-container {
-    max-width: 480px;
     background-color: var(--hero-bgc);
     display: block;
-    margin: 0px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1609,6 +1638,7 @@ body.modal-open {
 .projects__menu-list, .projects__list, .projects__filter {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .projects__btn {
@@ -1829,14 +1859,19 @@ body.modal-open {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 0px;
+    margin: 0px;
   }
   .projects__img {
     width: 370px;
   }
   .projects__item {
-    margin-right: 30px;
+    grid-gap: 30px;
     margin-bottom: 30px;
+    margin-right: 30px;
     display: block;
+  }
+  .projects__item:nth-child(n+7) {
+    margin-bottom: 0px;
   }
   .projects__item:nth-child(3n) {
     margin-right: 0px;

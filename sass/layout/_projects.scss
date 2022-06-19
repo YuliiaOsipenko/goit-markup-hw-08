@@ -143,6 +143,7 @@
         display: flex;
         flex-wrap: wrap;
         gap:0px;
+        margin:0px;
         
         
     
@@ -151,10 +152,15 @@
         width: 370px;
     }
     .projects__item{
-        margin-right: 30px;
+        grid-gap:30px;
         margin-bottom: 30px;
+        margin-right: 30px;
         display: block;
+        &:nth-child(n+7){
+            margin-bottom: 0px;
+        }       
         
+
         &:nth-child(3n){
             margin-right: 0px;
         }

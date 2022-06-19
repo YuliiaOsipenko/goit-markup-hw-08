@@ -5,12 +5,15 @@
 .team__list{
     padding-left: 0px;
     margin-bottom: 0px;
+    gap:30px;
 }
 .team__foto{
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 0px;
+   
+    
     
 }
 .team__title {
@@ -19,7 +22,7 @@
     line-height: 1.16;
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 0px;  
+    margin-bottom: 30px;  
    
 }
 .team__div {
@@ -58,7 +61,7 @@
     }
     .team__list{
         padding-left: 0px;
-        margin: 30px 15px 0px 15px;
+        margin-top:0px;
         display:block;
         
     }
@@ -66,6 +69,10 @@
     .team__foto{
         max-width: 450px;
         margin-top: 30px;
+        &:first-child{
+            margin-top: 0px;
+        }
+       
         
     }
     .team__img{
