@@ -311,6 +311,8 @@
 
     background-color: #fff;
     padding: 48px 83px 48px 40px;
+    display: flex;
+    flex-direction:column;
   }
 
   .mobile-menu__contact-list {
@@ -404,7 +406,7 @@
  
   .mobile-menu__list{
     padding-left: 0px;
-    margin-bottom:500px;
+    
   }
     
 }

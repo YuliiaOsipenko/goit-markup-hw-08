@@ -21,7 +21,7 @@
 }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 
-        .hero {  background-image:url(../img/mobhero.jpg);
+        .hero {  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/mobhero.jpg);
         }
 
     
@@ -79,7 +79,7 @@
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 
-        .hero {  background-image:url(../img/tabhero.jpg);
+        .hero {  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../img/tabhero.jpg);
         }
     }
    

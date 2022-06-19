@@ -224,15 +224,17 @@ align-items: center;
    .footer__list{
      
     text-align: center;
-    margin-bottom: 60px;
+    
    }
     .footer__title{
         text-align: center;
+        
     }
     .footer__footer-social-div{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 60px;
     }
     .footer__item{
     margin-top: 8px;
@@ -244,7 +246,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     padding: 0px;
-    margin-bottom: 60px;
+    margin: 0px;
 }
 
 .footer__form-input {
